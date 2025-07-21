@@ -13,6 +13,13 @@ typedef struct movie {
 } movie;
 
 movie* createMovieNode(const char* title, int year, const char* languages, float rating);
+void addMovieToList(movie** head, movie* newNode);
+void printMenu();
+void showMoviesByYear(movie* head);
+void showHighestRatedMoviePerYear(movie* head);
+void showMoviesByLanguage(movie* head);
+movie* processMovieFile(const char *filename);
+int main(int argc, char **argv);
 
 // Function to create a new movie node
 movie* createMovieNode(const char* title, int year, const char* languages, float rating) {
