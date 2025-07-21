@@ -337,7 +337,7 @@ movie* processMovieFile(const char *filename) {
     free(currLine);
     fclose(file);
 
-    printf("Processed file %s and parsed data for %d movies", filename, movieCount);
+    printf("Processed file %s and parsed data for %d movies/n", filename, movieCount);
 
     return head;
 }
